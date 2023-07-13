@@ -4,7 +4,7 @@ import "./css/Workouts.css"
 function Workouts() {
   return (
 <>
-<div>
+<div className='spotify'>
 <iframe  style={{ borderRadius: '12px' }}
     src="https://open.spotify.com/embed/playlist/6KrvaIKquX76SH9isR2dzj?utm_source=generator"
     width="100%"

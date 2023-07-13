@@ -6,13 +6,16 @@ import Home from './components/Home';
 import Footer from './components/UI/Footer';
 import AboutUs from './components/AboutUs';
 import './App.css';
+import LoginPage from './components/LoginPage';
 
 function App() {
   return (
     <>
     <div className="App">
+      
      <Header/>
      <Routes>
+        <Route path="/Login" element={<LoginPage />} />
         <Route path="/" element={<Home />} />
         <Route path="/workouts" element={<Workouts />} />
         <Route path="/tracking" element={<Tracking />} />

@@ -1,43 +1,50 @@
 
-.recipe-form {
-    max-width: 500px;
-    margin: auto;
-    padding: 20px;
-  }
-  
-  .recipe-name {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
+.progress-form {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
 
-  .form1 {
-    display: grid;
-    grid-gap: 10px;
-  }
-  
-  input[type="text"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .blue-btn {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .blue-btn:hover {
-    background-color: #0056b3;
-  }
+.recipe-name {
+  font-size: 54px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form1 {
+  display: grid;
+  grid-gap: 10px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blue-btn {
+  background-color: #ff1100;
+  color: #fff;
+  font-size: larger;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.blue-btn:hover {
+  background-color: #b30000;
+}
+
+.blue-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.5);
+}
   
   .progress-card-container {
     display: flex;
@@ -48,7 +55,7 @@
   
   .progress-card {
   width: 100%;
-  max-width: 600px; /* Adjust the max-width for a longer card */
+  max-width: 600px; 
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 20px;
@@ -79,12 +86,12 @@
   
 .progress-card img {
   width: 100%;
-  max-width: 100%; /* Add max-width property to limit the image size */
-  max-height: 200px;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
   border-radius: 4px;
   word-wrap: break-word;
-  margin-left: 0; /* Remove margin-left property */
+  margin-left: 0; 
 }
 
 .Delete-btn {
@@ -96,6 +103,9 @@
 }
 .Delete-btn:hover {
   transform: scale(1.1)
+}
+.App {
+  background-color: rgb(118, 118, 118);
 }
 
 

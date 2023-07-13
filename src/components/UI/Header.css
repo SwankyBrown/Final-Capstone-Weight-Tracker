@@ -32,6 +32,34 @@ header {
     font-weight: bold;
     transition: background-color 0.3s ease;
     position: relative;
+    cursor: pointer;
+  }
+  .theme {
+    display: inline-block;
+    padding: 0px 0px;
+    border: none;
+    border-radius: 4px;
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+  }
+  .theme:hover {
+    animation: rainbow 5s linear infinite;
+  }
+  @keyframes rainbow {
+    0% { color: rgb(255, 255, 255);}
+    7% { color: red;}
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    95% { color: rgb(255, 0, 0); }
+    100% { color: rgb(255, 255, 255); }
   }
   
   .nav-button:after {
@@ -62,4 +90,35 @@ header {
   .nav-button:focus:after {
     width: 100%;
   }
+
+
+
+  .dropdown-menu {
+    position: relative;
+    display: none;
+  }
+  
+  .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-menu ul li {
+    margin-bottom: 5px;
+  }
+  
+  .theme-option {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .theme-option:hover {
+    text-decoration: underline;
+  }
+
+
+
   

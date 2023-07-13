@@ -1,0 +1,27 @@
+.WeightDisplay {
+    margin-bottom:120px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #33333300;
+    color: #fff;
+    font-size: 250px;
+    text-align: center;
+    animation: slideIn 1s ease-in  ;
+  }
+  
+  .goal-weight {
+    font-size: 50px;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

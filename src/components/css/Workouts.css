@@ -5,9 +5,12 @@
     padding: 0px;
   }
   .grid-item {
-    background-color: rgb(130, 130, 130);
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: rgb(117, 117, 117);
+    border: 1px solid rgb(117, 117, 117);
     padding: 0px;
     font-size: 30px;
     text-align: center; 
+}
+.spotify {
+  background-color: rgb(117, 117, 117);
 }

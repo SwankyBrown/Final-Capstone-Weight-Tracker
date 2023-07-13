@@ -3,12 +3,14 @@ import { Formik } from "formik";
 import axios from "axios";
 import "./css/Tracking.css"
 import WeightDisplay from "./UI/WeightDisplay";
+import Home from "./Home";
 
 const Tracking = () => {
   const [progress, setProgress] = useState([]);
   const [name, setName] = useState("");
   const [quantity, setQuantity] = useState("");
   const [progressCards, setProgressCards] = useState([]);
+  const [latestWeight, setLatestWeight] = useState("")
 
   const addProgress = () => {
     setProgress([...progress, { name, quantity }]);
@@ -35,6 +37,7 @@ const Tracking = () => {
       journal: values.Journal,
     };
     setProgressCards([...progressCards, newProgressCard]);
+    setLatestWeight(values.Weight)
   };
 
   const handleDelete = (index) => {
@@ -67,7 +70,7 @@ const Tracking = () => {
   });
 
   return (
-    <section className="recipe-form">
+    <section className="progress-form">
       <h1 className="recipe-name">Progress Info</h1>
       <Formik initialValues={initialValues} onSubmit={onSubmit}>
         {({ values, handleChange, handleSubmit }) => (
@@ -103,7 +106,7 @@ const Tracking = () => {
               Add Progress
             </button>
 
-            <ul>{weightDisplay}</ul> {/* Render weightDisplay JSX elements here */}
+            <ul>{weightDisplay}</ul> 
 
             <div className="progress-card-container">
               {progressCardDisplay}
@@ -111,6 +114,7 @@ const Tracking = () => {
           </form>
         )}
       </Formik>
+     
     </section>
   );
 };
