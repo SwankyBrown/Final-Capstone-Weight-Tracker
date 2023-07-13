@@ -1,0 +1,117 @@
+
+.recipe-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .recipe-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+
+  .form1 {
+    display: grid;
+    grid-gap: 10px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .blue-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .blue-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .progress-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+  }
+  
+  .progress-card {
+  width: 100%;
+  max-width: 600px; /* Adjust the max-width for a longer card */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  margin: auto;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+  text-align: left;
+}
+  
+  .progress-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .progress-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    left: 0px;
+  }
+  
+  .progress-card p {
+    margin-bottom: 10px;
+  }
+  
+.progress-card img {
+  width: 100%;
+  max-width: 100%; /* Add max-width property to limit the image size */
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  word-wrap: break-word;
+  margin-left: 0; /* Remove margin-left property */
+}
+
+.Delete-btn {
+  border: none;
+  color: red;
+  cursor: pointer;
+  background-color: #0057b300;
+  font-size: large;
+}
+.Delete-btn:hover {
+  transform: scale(1.1)
+}
+
+
+  
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-in {
+    animation: slideIn 0.3s ease;
+  }
