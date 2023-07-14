@@ -1,5 +1,7 @@
 import React from 'react'
 import "./css/Workouts.css"
+import './UI/themes.css'
+
 
 function Workouts() {
   return (

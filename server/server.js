@@ -17,9 +17,15 @@ const {User} = require('./models/user')
 const {WeightGoal} = require('./models/weightGoal')
 const {Tracking} = require('./models/tracking')
 
+const {register, login} = require("./controllers/userCtrl")
+
 // .hasmany
 // .belongsto
-//
+
+
+// auth end
+app.post('/api/register',register)
+app.post('/api/login',login)
 
 
 //Endpoints//

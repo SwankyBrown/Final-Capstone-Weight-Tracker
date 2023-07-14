@@ -71,7 +71,7 @@ const Tracking = () => {
 
   return (
     <section className="progress-form">
-      <h1 className="recipe-name">Progress Info</h1>
+      <h1 className="progress">Progress Info</h1>
       <Formik initialValues={initialValues} onSubmit={onSubmit}>
         {({ values, handleChange, handleSubmit }) => (
           <form className="form1" onSubmit={handleSubmit}>

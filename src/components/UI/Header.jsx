@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import './Header.css';
+import './themes.css';
 
 function Header() {
+  const [theme, setTheme] = React.useState('theme1');
+
   const handleThemeToggle = () => {
     const dropdownMenu = document.querySelector('.dropdown-menu');
     dropdownMenu.style.display =
@@ -11,13 +13,16 @@ function Header() {
   };
 
   const handleThemeSelection = (event) => {
-    const theme = event.target.dataset.theme;
-    // Apply the selected theme to your application
-    console.log('Selected theme:', theme);
+    const selectedTheme = event.target.dataset.theme;
+    setTheme(selectedTheme);
   };
 
+  React.useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
   return (
-    <header>
+    <header className={`header ${theme}`}>
       <h1 className="website-name">改善 Kaizen</h1>
       <nav>
         <Link to="/">
@@ -36,7 +41,8 @@ function Header() {
           <button className="nav-button nav-button-tracking">Login</button>
         </Link>
         <button className="theme" onClick={handleThemeToggle}>
-          Change theme
+         🖌
+
         </button>
         <div className="dropdown-menu">
           <ul>

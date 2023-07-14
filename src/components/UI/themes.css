@@ -1,0 +1,164 @@
+.theme1 {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .theme1 button {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .theme1 button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  }
+  
+  .theme1 .website-name {
+    color: #ffffff;
+  }
+  
+  .theme1 .App {
+    background-color: #222222;
+  }
+  
+  .theme1 footer {
+    background-color: #000000;
+  }
+  
+  .theme1 .grid-container {
+    background-color: #000000;
+  }
+  
+  .theme1 .grid-item {
+    background-color: #111111;
+    border: 1px solid #ffffff;
+  }
+  
+  .theme1 .spotify {
+    background-color: #000000;
+  }
+
+  .theme1 .progress-card h3 {
+    color: rgb(0, 0, 0);
+  }
+
+  .theme1   .progress-card p {
+  color: #000000;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+LIGHT THEME */
+  
+  .theme2 {
+    background: linear-gradient(#ffffff, #afeeee);
+    color: #333333;
+  }
+  
+  .theme2 button {
+    background: #ffffff00;
+    color: #333333;
+  }
+  
+  .theme2 button:hover {
+    background: #ffffff00;
+    color: #333333;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .theme2 .website-name {
+    color: #00ced1;
+  }
+  
+  .theme2 .App {
+    background: linear-gradient(#ffffff, #afeeee);
+  }
+  
+  .theme2 footer {
+    background: linear-gradient(#afeeee,#ffffff );
+  }
+  
+  .theme2 .grid-container {
+    background: linear-gradient(#ffffff, #afeeee);
+  }
+  
+  .theme2 .grid-item {
+    background-color: #afeeee;
+    border: 1px solid #ffffff;
+  }
+  
+  .theme2 .spotify {
+    background: linear-gradient(#ffffff, #afeeee);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .theme3 {
+    background: #ffccff;
+    color: #ffffff;
+  }
+  
+  .theme3 button {
+    background: #ffccff;
+    color: #ffffff;
+  }
+  
+  .theme3 button:hover {
+    background: linear-gradient(#ffccff, #ffcce6);
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .theme3 .website-name {
+    color: #ffffff;
+  }
+  
+  .theme3 .App {
+    background: linear-gradient(#ffccff, #ffcce6);
+  }
+  
+  .theme3 footer {
+    background: linear-gradient( #ffcce6, #ffccff);
+  }
+  
+  .theme3 .grid-container {
+    background: linear-gradient(#ffccff, #ffcce6);
+  }
+  
+  .theme3 .grid-item {
+    background-color: #ffccff;
+    border: 1px solid #ffffff;
+  }
+  
+  .theme3 .spotify {
+    background: linear-gradient(#ffccff, #ffcce6);
+  }
