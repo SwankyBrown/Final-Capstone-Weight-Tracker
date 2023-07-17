@@ -6,6 +6,7 @@ import './UI/themes.css'
 function Workouts() {
   return (
 <>
+<h1 className='at-home'>At Home Workouts</h1>
 <div className='spotify'>
 <iframe  style={{ borderRadius: '12px' }}
     src="https://open.spotify.com/embed/playlist/6KrvaIKquX76SH9isR2dzj?utm_source=generator"

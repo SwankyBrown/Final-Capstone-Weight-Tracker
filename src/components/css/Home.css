@@ -1,23 +1,24 @@
 .WeightDisplay {
-    margin-bottom:120px ;
+    margin-top: 100px ;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 400px;
     background-color: #33333300;
     color: #fff;
-    font-size: 250px;
+    font-size: 400px;
     text-align: center;
-    animation: slideIn 1s ease-in  ;
+    animation: slideIn 1s ease-in forwards ;
   }
   
   .goal-weight {
     font-size: 50px;
+    text-align: center;
   }
   
   @keyframes slideIn {
     0% {
-      transform: translateY(50px);
+      transform: translateY(100px);
       opacity: 0;
     }
     100% {
@@ -25,3 +26,10 @@
       opacity: 1;
     }
   }
+
+  .cur-weight {
+    text-align: center;
+    
+  }
+
+  

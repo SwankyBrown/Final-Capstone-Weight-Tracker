@@ -8,6 +8,7 @@ import AboutUs from './components/AboutUs';
 import './components/UI/themes.css'
 import './App.css';
 import LoginPage from './components/LoginPage';
+import WorkoutsGym from './components/WorkoutsGym';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Login" element={<LoginPage />} />
         <Route path="/" element={<Home />} />
         <Route path="/workouts" element={<Workouts />} />
+        {/* <Route path="/workouts/gym" element={<WorkoutsGym />} /> */}
         <Route path="/tracking" element={<Tracking />} />
         <Route path="/Aboutus" element={<AboutUs />} />
      </Routes>

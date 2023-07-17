@@ -13,10 +13,10 @@ function AboutUs() {
       >
         <h2 className="about-us-heading">About Us</h2>
         <p className="about-us-text">
-          At our company, we are dedicated to helping you achieve your weight loss goals in a healthy and sustainable way.
+          we are dedicated to helping you achieve your weight loss goals in a healthy and sustainable way.
         </p>
         <p className="about-us-text">
-          Our team of experts is passionate about providing personalized guidance and support to each individual on their weight loss journey.
+          we provide guidance to each individual on their weight loss journey.
         </p>
         <p className="about-us-text">
           We offer a range of services including customized meal plans, exercise programs, and ongoing monitoring to ensure your success.

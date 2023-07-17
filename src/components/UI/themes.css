@@ -162,3 +162,38 @@ LIGHT THEME */
   .theme3 .spotify {
     background: linear-gradient(#ffccff, #ffcce6);
   }
+
+
+
+
+
+
+  .theme4 {
+  /* speed */
+  background-color: #0077be;
+  color: #fff;
+}
+
+.theme5 {
+  /* Sunset Orange */
+  background-color: #f95700;
+  color: #fff;
+}
+
+.theme6 {
+  /* Forest Green */
+  background-color: #228b22;
+  color: #fff;
+}
+
+.theme7 {
+/* Purple theme */
+  background-color: #6a0dad;
+  color: #fff;
+}
+
+
+
+.theme1, .theme2, .theme3, .theme4, .theme5, .theme6, .theme7 {
+  transition: background-color 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
