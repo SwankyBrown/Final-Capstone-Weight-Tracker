@@ -1,199 +1,350 @@
 .theme1 {
-    background-color: #000000;
-    color: #ffffff;
-  }
-  
-  .theme1 button {
-    background-color: #000000;
-    color: #ffffff;
-  }
-  
-  .theme1 button:hover {
-    background-color: #000000;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
-  }
-  
-  .theme1 .website-name {
-    color: #ffffff;
-  }
-  
-  .theme1 .App {
-    background-color: #222222;
-  }
-  
-  .theme1 footer {
-    background-color: #000000;
-  }
-  
-  .theme1 .grid-container {
-    background-color: #000000;
-  }
-  
-  .theme1 .grid-item {
-    background-color: #111111;
-    border: 1px solid #ffffff;
-  }
-  
-  .theme1 .spotify {
-    background-color: #000000;
-  }
+  background-color: #121212;
+  color: #ffffff;
+}
 
-  .theme1 .progress-card h3 {
-    color: rgb(0, 0, 0);
-  }
+.theme1 button {
+  background-color: #121212;
+  color: #ffffff;
+}
 
-  .theme1   .progress-card p {
-  color: #000000;
-  }
+.theme1 button:hover {
+  background-color: #121212;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
 
+.theme1 .website-name {
+  color: #ffffff;
+}
 
+.theme1 .App {
+  background-color: #1f1f1f;
+}
 
+.theme1 footer {
+  background-color: #121212;
+}
 
+.theme1 .grid-container {
+  background-color: #121212;
+}
 
+.theme1 .grid-item {
+  background-color: #1a1a1a;
+  border: 1px solid #ffffff;
+}
 
+.theme1 .spotify {
+  background-color: #121212;
+}
 
+.theme1 .progress-card h3 {
+  color: #ffffff;
+}
 
-
-
-
-
-
+.theme1 .progress-card p {
+  color: #ffffff;
+}
 
 /* 
 LIGHT THEME */
-  
-  .theme2 {
-    background: linear-gradient(#ffffff, #afeeee);
-    color: #333333;
-  }
-  
-  .theme2 button {
-    background: #ffffff00;
-    color: #333333;
-  }
-  
-  .theme2 button:hover {
-    background: #ffffff00;
-    color: #333333;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  }
-  
-  .theme2 .website-name {
-    color: #00ced1;
-  }
-  
-  .theme2 .App {
-    background: linear-gradient(#ffffff, #afeeee);
-  }
-  
-  .theme2 footer {
-    background: linear-gradient(#afeeee,#ffffff );
-  }
-  
-  .theme2 .grid-container {
-    background: linear-gradient(#ffffff, #afeeee);
-  }
-  
-  .theme2 .grid-item {
-    background-color: #afeeee;
-    border: 1px solid #ffffff;
-  }
-  
-  .theme2 .spotify {
-    background: linear-gradient(#ffffff, #afeeee);
-  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  .theme3 {
-    background: #ffccff;
-    color: #ffffff;
-  }
-  
-  .theme3 button {
-    background: #ffccff;
-    color: #ffffff;
-  }
-  
-  .theme3 button:hover {
-    background: linear-gradient(#ffccff, #ffcce6);
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-  .theme3 .website-name {
-    color: #ffffff;
-  }
-  
-  .theme3 .App {
-    background: linear-gradient(#ffccff, #ffcce6);
-  }
-  
-  .theme3 footer {
-    background: linear-gradient( #ffcce6, #ffccff);
-  }
-  
-  .theme3 .grid-container {
-    background: linear-gradient(#ffccff, #ffcce6);
-  }
-  
-  .theme3 .grid-item {
-    background-color: #ffccff;
-    border: 1px solid #ffffff;
-  }
-  
-  .theme3 .spotify {
-    background: linear-gradient(#ffccff, #ffcce6);
-  }
-
-
-
-
-
-
-  .theme4 {
-  /* speed */
-  background-color: #0077be;
-  color: #fff;
+.theme2 {
+  background: #f0f0f0;
+  color: #000000;
 }
+
+.theme2 button {
+  background: transparent;
+  color: #000000;
+}
+
+.theme2 button:hover {
+  background: transparent;
+  color: #000000;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.theme2 .website-name {
+  color: #000000;
+}
+
+.theme2 .App {
+  background: #f0f0f0;
+}
+
+.theme2 footer {
+  background: #f0f0f0;
+}
+
+.theme2 .grid-container {
+  background: #f0f0f0;
+}
+
+.theme2 .grid-item {
+  background-color: #f0f0f0;
+  border: 1px solid #ffffff;
+}
+
+.theme2 .spotify {
+  background: #f0f0f0;
+}
+
+.theme2 .WeightDisplay {
+  color: #000000;
+}
+
+.theme2 .form-btn:last-child {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+/*& Pink theme */
+.theme3 {
+  background: #ffccff;
+  color: #ffffff;
+}
+
+.theme3 button {
+  background: #ffccff;
+  color: #ffffff;
+}
+
+.theme3 button:hover {
+  background: linear-gradient(#ffccff, #ffcce6);
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.theme3 .website-name {
+  color: #ffffff;
+}
+
+.theme3 .App {
+  background: linear-gradient(#ffccff, #ffcce6);
+}
+
+.theme3 footer {
+  background: linear-gradient(#ffcce6, #ffccff);
+}
+
+.theme3 .grid-container {
+  background: linear-gradient(#ffccff, #ffcce6);
+}
+
+.theme3 .grid-item {
+  background-color: #ffccff;
+  border: 1px solid #ffffff;
+}
+
+.theme3 .spotify {
+  background: linear-gradient(#ffccff, #ffcce6);
+}
+
+/*? Blue theme */
+.theme4 {
+  background: #007bff;
+  color: #ffffff;
+}
+
+.theme4 button {
+  background: #007bff;
+  color: #ffffff;
+}
+
+.theme4 button:hover {
+  background: linear-gradient(#007bff, #0056b3);
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.theme4 .website-name {
+  color: #ffffff;
+}
+
+.theme4 .App {
+  background: linear-gradient(#007bff, #0056b3);
+}
+
+.theme4 footer {
+  background: linear-gradient(#0056b3, #007bff);
+}
+
+.theme4 .grid-container {
+  background: linear-gradient(#007bff, #0056b3);
+}
+
+.theme4 .grid-item {
+  background-color: #007bff;
+  border: 1px solid #ffffff;
+}
+
+.theme4 .spotify {
+  background: linear-gradient(#007bff, #0056b3);
+}
+
+/*! Sunset Vibe */
 
 .theme5 {
-  /* Sunset Orange */
-  background-color: #f95700;
-  color: #fff;
+  background: #cc0000;
+  color: #ffffff;
 }
 
+.theme5 button {
+  background: #cc0000;
+  color: #ffffff;
+}
+
+.theme5 button:hover {
+  background: linear-gradient(#cc0000, #990033);
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.theme5 .website-name {
+  color: #ffffff;
+}
+
+.theme5 .App {
+  background: linear-gradient(#cc0000, #990033);
+}
+
+.theme5 footer {
+  background: linear-gradient(#990033, #cc0000);
+}
+
+.theme5 .grid-container {
+  background: linear-gradient(#cc0000, #990033);
+}
+
+.theme5 .grid-item {
+  background-color: #cc0000;
+  border: 1px solid #ffffff;
+}
+
+.theme5 .spotify {
+  background: linear-gradient(#cc0000, #990033);
+}
+
+.theme5 .WeightDisplay {
+  color: rgb(255, 242, 0);
+}
+
+.theme5 .form-btn:last-child {
+  background-color: rgb(255, 225, 0);
+  color: #ffffff;
+}
+
+/** Green theme */
 .theme6 {
-  /* Forest Green */
-  background-color: #228b22;
-  color: #fff;
+  background-color: #3aa757;
+  color: #ffffff;
 }
 
+.theme6 button {
+  background: #37ff1400;
+  color: #ffffff;
+}
+
+.theme6 button:hover {
+  background: linear-gradient(#37ff1400, #0b662318);
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.theme6 .website-name {
+  color: #ffffff;
+}
+
+.theme6 .App {
+  background: linear-gradient(#145c32, #3aa757);
+}
+
+.theme6 footer {
+  background: linear-gradient(#145c32, #3aa757);
+}
+
+.theme6 .grid-container {
+  background: linear-gradient(#145c32, #3aa757);
+}
+
+.theme6 .grid-item {
+  background-color: #333333;
+  border: 1px solid #ffffff;
+}
+
+.theme6 .spotify {
+  background: linear-gradient(#145c32, #3aa757);
+}
+
+.theme6 .WeightDisplay {
+  color: rgb(255, 255, 255);
+}
+
+.theme6 .form-btn:last-child {
+  background-color: wheat;
+  color: #000000;
+}
+
+/*^ Purple background color */
 .theme7 {
-/* Purple theme */
-  background-color: #6a0dad;
-  color: #fff;
+  background-color: #722ca7;
+  color: #ffffff;
 }
 
+.theme7 button {
+  background: #37ff1400;
+  color: #ffffff;
+}
 
+.theme7 button:hover {
+  background: linear-gradient(#37ff1400, #0b662318);
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
-.theme1, .theme2, .theme3, .theme4, .theme5, .theme6, .theme7 {
+.theme7 .website-name {
+  color: #ffffff;
+}
+
+.theme7 .App {
+  background: linear-gradient(#2a0c3e, #722ca7);
+}
+
+.theme7footer {
+  background: linear-gradient(#2a0c3e, #722ca7);
+}
+
+.theme7 .grid-container {
+  background: linear-gradient(#2a0c3e, #722ca7);
+}
+
+.theme7 .grid-item {
+  background-color: #333333;
+  border: 1px solid #ffffff;
+}
+
+.theme6 .spotify {
+  background: linear-gradient(#2a0c3e, #722ca7);
+}
+
+.theme7 .WeightDisplay {
+  color: rgb(255, 255, 255);
+}
+
+.theme7 .form-btn:last-child {
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+}
+
+.theme1 *,
+.theme2 *,
+.theme3 *,
+.theme4 *,
+.theme5 *,
+.theme6 *,
+.theme7 * {
   transition: background-color 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }

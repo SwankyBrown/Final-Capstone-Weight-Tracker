@@ -3,7 +3,7 @@ const {DataTypes} = require("sequelize")
 const {sequelize}= require('../utils/database')
 
 module.exports = {
-    Weightgoal: sequelize.define('Weightgoal', {
+    WeightGoal: sequelize.define('WeightGoal', {
         id: {
             type: DataTypes.INTEGER,
             autoIncrement: true, 

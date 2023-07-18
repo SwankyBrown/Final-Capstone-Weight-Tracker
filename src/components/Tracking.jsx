@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Formik } from "formik";
 import axios from "axios";
 import "./css/Tracking.css";
-import WeightDisplay from "./UI/WeightDisplay";
 import Home from "./Home";
 
 const Tracking = () => {

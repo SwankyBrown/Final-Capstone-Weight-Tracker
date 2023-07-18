@@ -3,8 +3,8 @@ const bcrypt = require('bcryptjs')
 const {SECRET} = process.env
 const jwt = require("jsonwebtoken")
 
-const createToken = (username,id) => {
-    let token = jwt.sign({username,id}, SECRET,{expiresIn: "2 weeks"})
+const createToken = (id) => {
+    let token = jwt.sign({id}, SECRET)
     return token
 }
 
@@ -25,7 +25,7 @@ module.exports = {
                     hashedPass: hash
                 })
 
-                const token = createToken(newUser.username, newUser.id)
+                const token = createToken(newUser.id)
                 const exp = Date.now() + 1000 * 60 * 60 * 350
                 res.status(200).send({
                     username: newUser.username,
@@ -41,7 +41,32 @@ module.exports = {
         }
     },
 
-    login: (req,res) => {
-        console.log('login');
-    }
-}
+    login: async (req, res) => {
+        try {
+          const { username, password } = req.body;
+          let foundUser = await User.findOne({ where: { username } });
+      
+          if (!foundUser) {
+            res.status(400).send("Invalid username or password");
+          } else {
+            const isPasswordValid = bcrypt.compareSync(password, foundUser.hashedPass);
+      
+            if (!isPasswordValid) {
+              res.status(400).send("Invalid username or password");
+            } else {
+              const token = createToken(foundUser.id);
+              const exp = Date.now() + 1000 * 60 * 60 * 350;
+      
+              res.status(200).send({
+                username: foundUser.username,
+                userId: foundUser.id,
+                token: token,
+                exp: exp,
+              });
+            }
+          }
+        } catch (err) {
+          console.log(err);
+          res.status(500).send("An error occurred during login");
+        }
+      }}

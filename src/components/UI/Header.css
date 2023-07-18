@@ -114,31 +114,28 @@ header {
   /* /////////////////////// */
 
 
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #f1f1f1;
-  }
+/* Base styles for the dropdown */
+.dropdown-menu-workouts {
+  position: relative;
+}
+
+.dropdown-content {
+  display: flex; /* Use flexbox to show the content in a line */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #ffffff00;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  opacity: 0; /* Start with opacity 0 to hide the content */
+  transform: translateY(-10px); /* Move the content up by 10px to hide it initially */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Add transitions for opacity and transform */
+}
+
+/* Show the dropdown content on hover */
+.dropdown-menu-workouts:hover .dropdown-content {
+  opacity: 1; /* On hover, change opacity to 1 to show the content */
+  transform: translateY(0); /* Move the content back to its original position */
+}

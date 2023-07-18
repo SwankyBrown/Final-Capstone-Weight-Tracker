@@ -28,9 +28,13 @@ function Header() {
       <Link to="/">
         <button className="nav-button nav-button-home">Home</button>
       </Link>
-      <Link to="/workouts">
-        <button className="nav-button nav-button-workouts">Workouts</button>
-      </Link>
+      <div class="dropdown-menu-workouts">
+  <button className="nav-button nav-button-workouts">Workouts</button>
+  <div class="dropdown-content">
+    <Link to="/workouts"><button class="nav-button nav-button-at-home">Home</button></Link>
+    <Link to="/workouts/gym"><button class="nav-button nav-button-gym">Gym</button></Link>
+  </div>
+</div>
       <Link to="/tracking">
         <button className="nav-button nav-button-tracking">Tracking</button>
       </Link>
