@@ -12,12 +12,24 @@ const Tracking = () => {
   const [latestWeight, setLatestWeight] = useState("");
   const [imageFile, setImageFile] = useState(null);
   const [fileError, setFileError] = useState(""); 
+  const [goalWeight, setGoalWeight]= useState("")
+
+
+  const handleGoalWeightSubmit = (event) => {
+    event.preventDefault();
   
 
   const addProgress = () => {
     setProgress([...progress, { name, quantity }]);
     setName("");
     setQuantity("");
+  };
+
+  const form = event.target;
+    const formData = new FormData(form);
+    const newGoalWeight = formData.get("goalWeightInput");
+    setGoalWeight(newGoalWeight);
+    form.reset();
   };
 
   const initialValues = {
@@ -90,6 +102,16 @@ const Tracking = () => {
   return (
     <section className="progress-form">
       <h1 className="progress">Progress Info</h1>
+      <form className="goal-weight-form" onSubmit={handleGoalWeightSubmit}>
+        <input
+          type="number"
+          name="goalWeightInput"
+          placeholder="Set Goal Weight"
+        />
+        <button type="submit" className="blue-btn">
+          Set Goal Weight
+        </button>
+      </form>
       <Formik initialValues={initialValues} onSubmit={onSubmit}>
         {({ values, handleChange, handleSubmit }) => (
           <form className="form1" onSubmit={handleSubmit}>

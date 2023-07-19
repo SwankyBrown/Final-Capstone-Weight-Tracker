@@ -47,6 +47,94 @@
   color: #ffffff;
 }
 
+.theme1 .progress-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+
+}
+
+.theme1 .progress-card {
+width: 100%;
+max-width: 600px; 
+border: 1px solid #ccc;
+border-radius: 4px;
+padding: 20px;
+margin: auto;
+background-color: #f9f9f9;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+word-wrap: break-word;
+margin-bottom: 20px;
+text-align: left;
+}
+
+.theme1 .progress-card {
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(0); 
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; 
+}
+
+.theme1 .progress-card:hover {
+  box-shadow: 0px 8px 16px rgba(8, 177, 255, 0.641);
+  transform: translateY(-5px);
+}
+
+.theme1 .progress-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.theme1 .progress-card p {
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.theme1 .progress-card img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  word-wrap: break-word;
+  margin-left: 0;
+}
+
+.theme1 .Delete-btn {
+  border: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  background-color: #0057b300;
+  font-size: large;
+}
+
+.theme1 .Delete-btn:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
 LIGHT THEME */
 
@@ -96,9 +184,100 @@ LIGHT THEME */
 }
 
 .theme2 .form-btn:last-child {
-  background-color: #000000;
+  background-color: rgb(197, 197, 197);
+  color: #000000;
+}
+
+.theme2 .form-btn:last-child:hover {
+  background-color: rgb(219, 218, 218);
+  color: #00eeff;
+}
+
+/* //////////////////////////////////////////////////////// */
+.theme2 .progress-card p {
   color: #ffffff;
 }
+
+.theme2 .progress-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.theme2 .progress-card {
+  width: 100%;
+  max-width: 400px; 
+  border-radius: 20px; 
+  padding: 20px;
+  margin: 20px; 
+  background-color: #f8fafc; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  text-align: left;
+  position: relative; 
+  overflow: hidden; 
+}
+
+.theme2 .progress-card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05); 
+}
+
+.theme2 .progress-card h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333333; 
+  text-align: center;
+}
+
+.theme2 .progress-card p {
+  margin-bottom: 15px;
+  color: #666666; 
+}
+
+.theme2 .progress-card img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  word-wrap: break-word;
+  margin-left: 0;
+}
+
+.theme2 .Delete-btn {
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #ff4757; 
+  font-size: 16px;
+  position: absolute;
+  top: -7px; 
+  right: -7px;
+  padding: 10px;
+  border-radius: 50%; 
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.theme2 .Delete-btn:hover {
+  background-color: #ed2e46; 
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*& Pink theme */
@@ -108,15 +287,23 @@ LIGHT THEME */
 }
 
 .theme3 button {
-  background: #ffccff;
+  background: #e1489200;
   color: #ffffff;
 }
 
-.theme3 button:hover {
-  background: linear-gradient(#ffccff, #ffcce6);
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+
+.theme3 .blue-btn {
+  background-color: #ffffff;
+  color: #e14892;
 }
+
+.theme3 button.blue-btn:hover {
+  background-color: rgb(199, 197, 197);
+  color: #e14892;
+  text-shadow: none;
+}
+
 
 .theme3 .website-name {
   color: #ffffff;
@@ -143,6 +330,133 @@ LIGHT THEME */
   background: linear-gradient(#ffccff, #ffcce6);
 }
 
+.theme3 .form-btn:last-child {
+  background-color: rgb(251, 251, 251);
+  color: #eaa1e5;
+}
+
+.theme3 .form-btn:last-child:hover {
+  background-color: rgb(211, 254, 209);
+  color: #f9a0fe;
+}
+
+/* //////////////////////////////////////////////////////// */
+.theme3 .progress-card p {
+  color: #ffffff;
+}
+
+.theme3 .progress-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.theme3 .progress-card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fdf2f2;
+  box-shadow: 0 4px 8px rgba(255, 153, 204, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.theme3 .progress-card:hover {
+  box-shadow: 0px 8px 16px rgba(255, 153, 204, 0.4);
+  transform: translateY(-5px) scale(1.02);
+}
+
+.theme3 .progress-card h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #f76889;
+  position: absolute;
+  top: 140px;
+  left: 280px;
+  z-index: 1; 
+  transition: top 0.3s ease, right 0.3s ease;
+}
+
+.theme3 .progress-card:hover h3 {
+  top: 0px; 
+  left: calc(50% - 60px); 
+}
+
+.theme3 .progress-card p {
+  margin-bottom: 15px;
+  color: #a86285;
+}
+
+.theme3 .image-container {
+  position: absolute;
+  top: -200px; 
+  left: calc(50% - 200px); 
+  width: 400px;
+  height: 400px;
+  overflow: hidden; 
+  border-radius: 16px;
+  z-index: -1; 
+}
+
+.theme3 .progress-card img {
+  width: 150px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  transform: rotate(-15deg);
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.theme3 .progress-card img:hover {
+  width: 1020px;
+  height: 520px;
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.15);
+  transform: rotate(-0deg); 
+}
+
+.theme3 .progress-card .decorative-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 90%;
+  height: 12px;
+  background-color: #ff87a3;
+  border-radius: 50% 50% 0 0;
+  transform: translateX(-50%);
+}
+
+.theme3 .Delete-btn {
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #ff87a3;
+  font-size: 16px;
+  padding: 10px 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.theme3 .Delete-btn:hover {
+  background-color: #ff5b76;
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
 /*? Blue theme */
 .theme4 {
   background: #007bff;
@@ -154,11 +468,19 @@ LIGHT THEME */
   color: #ffffff;
 }
 
-.theme4 button:hover {
-  background: linear-gradient(#007bff, #0056b3);
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+
+.theme4 .blue-btn {
+  background-color: #d6dce5;
+  color: #062ffe;
 }
+
+.theme4 button.blue-btn:hover {
+  background-color: rgb(199, 197, 197);
+  color: #2344ea;
+  text-shadow: none;
+}
+
 
 .theme4 .website-name {
   color: #ffffff;
@@ -183,6 +505,124 @@ LIGHT THEME */
 
 .theme4 .spotify {
   background: linear-gradient(#007bff, #0056b3);
+
+
+}
+
+.theme4 .form-btn:last-child {
+  background-color: rgb(254, 253, 253);
+  color: #000000;
+}
+
+.theme4 .form-btn:last-child:hover {
+  background-color: rgb(219, 218, 218);
+  color: #007bff;
+}
+
+
+/* ///////////////////////////////////////////////////////////////// */
+
+
+
+.theme4 .progress-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.theme4 .progress-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  padding: 30px 20px;
+  margin: 20px;
+  background-color: #f0f9ff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.theme4 .progress-card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 255, 0.4); 
+  transform: translateY(-5px) scale(1.02);
+}
+
+.theme4 .progress-card h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #003366;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  transition: top 0.3s ease, left 0.3s ease;
+}
+
+.theme4 .progress-card:hover h3 {
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.theme4 .progress-card p {
+  margin-bottom: 15px;
+  color: #004080;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.theme4 .progress-card img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 255, 0.1); 
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme4 .progress-card img:hover {
+  width: 1020px;
+  height: 520px;
+  box-shadow: 12px 12px 12px rgba(0, 0, 255, 0.15); 
+  transform: rotate(-0deg);
+}
+
+.theme4 .progress-card .decorative-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 90%;
+  height: 12px;
+  background-color: #99ccff; 
+  border-radius: 50% 50% 0 0;
+  transform: translateX(-50%);
+}
+
+.theme4 .Delete-btn {
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4a90e2; 
+  font-size: 16px;
+  padding: 10px 12px;
+  border-radius: 30%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.theme4 .Delete-btn:hover {
+  background-color: #0073cc; 
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 /*! Sunset Vibe */
@@ -235,6 +675,109 @@ LIGHT THEME */
 .theme5 .form-btn:last-child {
   background-color: rgb(255, 225, 0);
   color: #ffffff;
+}
+
+/* ///////////////////////////////////////////////////////////////// */
+
+
+
+.theme5 .progress-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.theme5 .progress-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-radius: 16px;
+  padding: 30px 20px;
+  margin: 20px;
+  background-color: #ff2800; 
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.theme5 .progress-card:hover {
+  box-shadow: 0px 8px 16px rgba(255, 0, 0, 0.4); 
+  transform: translateY(-5px) scale(1.02);
+}
+
+.theme5 .progress-card h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff; 
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  transition: top 0.3s ease, left 0.3s ease;
+}
+
+.theme5 .progress-card:hover h3 {
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.theme5 .progress-card p {
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 18px;
+}
+
+.theme5 .progress-card img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 8px 8px 8px rgba(255, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme5 .progress-card img:hover {
+  box-shadow: 12px 12px 12px rgba(255, 0, 0, 0.15); 
+  transform: rotate(-0deg);
+}
+
+.theme5 .progress-card .decorative-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 90%;
+  height: 12px;
+  background-color: #ff6666; 
+  border-radius: 50% 50% 0 0;
+  transform: translateX(-50%);
+}
+
+.theme5 .Delete-btn {
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #000000;
+  font-size: 16px;
+  padding: 10px 12px;
+  border-radius: 30%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.theme5 .Delete-btn:hover {
+  background-color: #333333; 
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 /** Green theme */
@@ -326,7 +869,7 @@ LIGHT THEME */
   border: 1px solid #ffffff;
 }
 
-.theme6 .spotify {
+.theme7 .spotify {
   background: linear-gradient(#2a0c3e, #722ca7);
 }
 

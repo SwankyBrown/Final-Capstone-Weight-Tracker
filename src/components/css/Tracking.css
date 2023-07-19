@@ -38,14 +38,11 @@ textarea {
   transition: background-color 0.3s ease;
 }
 
-.blue-btn:hover {
-  background-color: #b30000;
+.blue-btn:active {
+  transform: scale(0.9); 
 }
 
-.blue-btn:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.5);
-}
+
   
   .progress-card-container {
     display: flex;

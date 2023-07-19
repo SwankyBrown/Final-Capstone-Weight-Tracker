@@ -10,11 +10,13 @@ import './App.css';
 import LoginPage from './components/LoginPage';
 import WorkoutsGym from './components/WorkoutsGym';
 
+
+
 function App() {
   return (
     <>
     <div className="App">
-      
+
      <Header/>
      <Routes>
         <Route path="/Login" element={<LoginPage />} />
@@ -25,6 +27,7 @@ function App() {
         <Route path="/Aboutus" element={<AboutUs />} />
      </Routes>
      <Footer />
+
     </div>
     </>
   );
