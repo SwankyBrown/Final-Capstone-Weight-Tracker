@@ -26,8 +26,7 @@ function App() {
         <Route path="/tracking" element={<Tracking />} />
         <Route path="/Aboutus" element={<AboutUs />} />
      </Routes>
-     <Footer />
-
+    <Footer />
     </div>
     </>
   );

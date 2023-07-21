@@ -1,8 +1,23 @@
 
+.goal-weight-button-container {
+  position: fixed;
+  bottom: 130px;
+  right: 60px;
+  z-index: 1; /* Optional: Use a z-index to control the stacking order if needed */
+}
+
+.goal-weight-form.hidden input[type="number"],
+.goal-weight-form.hidden input[type="date"],
+.goal-weight-form.hidden button {
+  display: none;
+}
+
+
 .progress-form {
-  max-width: 500px;
+  max-width: 700px;
+  height: auto;
   margin: auto;
-  padding: 20px;
+  padding: 60px;
 }
 
 .progress {
@@ -14,7 +29,7 @@
 
 .form1 {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 30px;
 }
 
 input[type="text"],

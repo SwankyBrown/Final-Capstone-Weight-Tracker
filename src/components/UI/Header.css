@@ -87,15 +87,41 @@ header {
     width: 100%;
   }
 
+  .dropdown-menu {
+    width: 200px;
+    animation: slideIn 0.3s forwards;
+  }
 
+  
+  
+  /* Define the slide-in animation keyframes */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
 
   .dropdown-menu ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    width: 400px;
+    margin-right: 0px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
   }
   
+  /* Adjust the flex-basis to make each item take 50% of the container width, creating a 2x4 grid */
+  .dropdown-menu li {
+    flex-basis: 34%; /* This will make each item take 50% of the container width */
+    padding: 0px; /* Add some spacing between the items if desired */
+    box-sizing: border-box; /* Include padding in the flex-basis calculation */
+  }
 
   
   .theme-option {

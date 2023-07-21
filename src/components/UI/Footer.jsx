@@ -26,8 +26,27 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <div className="quote-container">
-        <p className="quote">{randomQuote}</p>
+      <div className="footer-content">
+        <div className="quote-container">
+          <p className="quote">{randomQuote}</p>
+        </div>
+        <div className="footer-logo">改善</div>
+        <div className="footer-links">
+          <a href="/">Home</a>
+          <a href="/aboutus">About</a>
+          <a href="/workouts">Workout</a>
+        </div>
+        <div className="footer-social">
+          <a href="https://www.instagram.com/sheldon.c75/">
+            <i className="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/sheldon.c75/">
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/sheldon.c75/">
+            <i className="fab fa-instagram"></i>
+          </a>
+        </div>
       </div>
     </footer>
   );
