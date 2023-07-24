@@ -1,15 +1,24 @@
 .WeightDisplay {
-    margin-top: 100px ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-color: #33333300;
+  color: #fff;
+  font-size: 500px;
+  text-align: center;
+  animation: slideIn 1s ease-in forwards;
+}
+
+
+@media screen and (max-width: 1484px) {
+  .WeightDisplay {
+    font-size: 300px; 
     height: 400px;
-    background-color: #33333300;
-    color: #fff;
-    font-size: 400px;
-    text-align: center;
-    animation: slideIn 1s ease-in forwards ;
   }
+}
+
   
   .goal-weight {
     font-size: 50px;

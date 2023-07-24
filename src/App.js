@@ -1,7 +1,9 @@
 import { Routes, Route, Link } from 'react-router-dom';
+import React, { useState } from "react";
 import Header from './components/UI/Header';
 import Workouts from './components/Workouts';
 import Tracking from './components/Tracking';
+import WorkoutsMain from './components/WorkoutsMain';
 import Home from './components/Home';
 import Footer from './components/UI/Footer';
 import AboutUs from './components/AboutUs';
@@ -15,6 +17,7 @@ import WorkoutsGym from './components/WorkoutsGym';
 function App() {
   return (
     <>
+    
     <div className="App">
 
      <Header/>
@@ -25,6 +28,7 @@ function App() {
         <Route path="/workouts/gym" element={<WorkoutsGym />} />
         <Route path="/tracking" element={<Tracking />} />
         <Route path="/Aboutus" element={<AboutUs />} />
+        <Route path='/workoutsmain' element={<WorkoutsMain />} />
      </Routes>
     <Footer />
     </div>

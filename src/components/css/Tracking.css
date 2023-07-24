@@ -1,7 +1,7 @@
 
 .goal-weight-button-container {
   position: fixed;
-  bottom: 130px;
+  bottom: 150px;
   right: 60px;
   z-index: 1; /* Optional: Use a z-index to control the stacking order if needed */
 }

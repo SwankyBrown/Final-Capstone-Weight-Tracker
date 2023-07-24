@@ -37,7 +37,7 @@ app.post('/api/tracking', createTracking);
 
 //** get endpoints
 app.get('/api/weight-goal/:userId', getWeightGoalByUserId);
-app.get('/api/trackings', getAllTrackings)
+app.get('/api/trackings/:goalWeightId', getAllTrackings)
 
 sequelize.sync().then(() => {
   app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));

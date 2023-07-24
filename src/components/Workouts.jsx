@@ -7,15 +7,17 @@ function Workouts() {
   return (
 <>
 <h1 className='at-home'>At Home Workouts</h1>
-<div className='spotify'>
-<iframe  style={{ borderRadius: '12px' }}
+<div className='spotify' style={{ borderRadius: '12px', backgroundColor: 'transparent' }}>
+<iframe
+    style={{ borderRadius: '12px', backgroundColor: 'transparent' }}
     src="https://open.spotify.com/embed/playlist/6KrvaIKquX76SH9isR2dzj?utm_source=generator"
     width="100%"
     height="352"
     frameBorder="0"
     allowFullScreen=""
     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-    loading="lazy"></iframe>
+    loading="lazy"
+  ></iframe>
 </div>
 
     <div class="grid-container">

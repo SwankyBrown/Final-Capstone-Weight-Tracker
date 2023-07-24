@@ -27,8 +27,9 @@ const Tracking = () => {
         setGoalWeightDate(res.data.date)
         setWeight(res.data.weight)
         setGoalWeightSubmitted(true)
+        
         axios
-        .get("http://localhost:3817/api/trackings")
+        .get(`http://localhost:3817/api/trackings/${res.data.id}`)
         .then ((res) => {
           setProgressCards(res.data)
         })
@@ -84,7 +85,7 @@ console.log(userId);
         setProgressCards((prevProgressCards) => [
           ...prevProgressCards,
           {
-            weight: weight,
+            currentWeight: weight,
             date: weightDate,
             journal: journal,
           },
@@ -176,6 +177,7 @@ console.log(userId);
 })}
       </div>
     </section>
+    
   );
 };
 

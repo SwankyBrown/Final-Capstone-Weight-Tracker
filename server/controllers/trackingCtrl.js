@@ -1,4 +1,5 @@
 const { Tracking } = require('../models/tracking');
+const { WeightGoal } = require('../models/weightGoal');
 
 const createTracking = async (req, res) => {
   try {
@@ -20,7 +21,8 @@ const createTracking = async (req, res) => {
 
 const getAllTrackings = async (req, res) => {
   try {
-    const allTrackings = await Tracking.findAll();
+    const {goalWeightId} = req.params
+    const allTrackings = await Tracking.findAll({where:  {WeightGoalId: goalWeightId}});
     return res.status(200).json(allTrackings);
   } catch (error) {
     console.error("Error fetching all trackings:", error);

@@ -3,6 +3,13 @@
   color: #ffffff;
 }
 
+.theme1 .website-name {
+  color: transparent;
+  font-size: 46px;
+  width: 20%;
+
+}
+
 .theme1 button {
   background-color: #121212;
   color: #ffffff;
@@ -833,19 +840,24 @@ LIGHT THEME */
 
 /*^ Purple background color */
 .theme7 {
-  background-color: #722ca7;
+  background: #4b0082;
   color: #ffffff;
 }
 
 .theme7 button {
-  background: #37ff1400;
+  background: #4b0082;
   color: #ffffff;
 }
 
-.theme7 button:hover {
-  background: linear-gradient(#37ff1400, #0b662318);
+.theme7 .blue-btn {
+  background-color: #4b0082;
   color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.theme7 button.blue-btn:hover {
+  background-color: #6c3483;
+  color: #ffffff;
+  text-shadow: none;
 }
 
 .theme7 .website-name {
@@ -853,34 +865,166 @@ LIGHT THEME */
 }
 
 .theme7 .App {
-  background: linear-gradient(#2a0c3e, #722ca7);
+  background: #4b0082;
 }
 
-.theme7footer {
-  background: linear-gradient(#2a0c3e, #722ca7);
+.theme7 footer {
+  background: #8e44ad;
 }
 
 .theme7 .grid-container {
-  background: linear-gradient(#2a0c3e, #722ca7);
+  background: #4b0082;
 }
 
 .theme7 .grid-item {
-  background-color: #333333;
+  background-color: #4b0082;
   border: 1px solid #ffffff;
 }
 
 .theme7 .spotify {
-  background: linear-gradient(#2a0c3e, #722ca7);
-}
-
-.theme7 .WeightDisplay {
-  color: rgb(255, 255, 255);
+  background: #4b0082;
 }
 
 .theme7 .form-btn:last-child {
-  background-color: rgb(0, 0, 0);
-  color: #ffffff;
+  background-color: #d6dce5;
+  color: #000000;
 }
+
+.theme7 .form-btn:last-child:hover {
+  background-color: #b2babb;
+  color: #4b0082;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////// */
+
+
+
+.theme7 .progress-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.theme7 .progress-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  padding: 30px 20px;
+  margin: 20px;
+  background-color: #333333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.theme7 .progress-card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+  transform: translateY(-5px) scale(1.02);
+}
+
+.theme7 .progress-card h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  transition: top 0.3s ease, left 0.3s ease;
+}
+
+.theme7 .progress-card:hover h3 {
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.theme7 .progress-card p {
+  margin-bottom: 15px;
+  color: #d6dce5;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.theme7 .progress-card img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme7 .progress-card img:hover {
+  width: 1020px;
+  height: 520px;
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.6);
+  transform: rotate(-0deg);
+}
+
+.theme7 .progress-card .decorative-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 90%;
+  height: 12px;
+  background-color: #444444;
+  border-radius: 50% 50% 0 0;
+  transform: translateX(-50%);
+}
+
+.theme7 .Delete-btn {
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4a90e2;
+  font-size: 16px;
+  padding: 10px 12px;
+  border-radius: 30%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.theme7 .Delete-btn:hover {
+  background-color: #0073cc;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.theme3 .modal-buttons button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #ffaeff;
+  color: #fff;
+}
+
+.theme3 .modal-buttons button:hover {
+  background-color: #7a016cd8;
+}
+
+
+
+
+
+
+
 
 .theme1 *,
 .theme2 *,
@@ -891,3 +1035,6 @@ LIGHT THEME */
 .theme7 * {
   transition: background-color 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
+
+/* fix themes list */
+/* get the home page working and showing data */
