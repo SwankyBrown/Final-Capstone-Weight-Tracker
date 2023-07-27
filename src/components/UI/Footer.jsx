@@ -31,7 +31,7 @@ function Footer() {
         <div className="footer-links">
           <Link to="/">Home</Link>
           <Link to="/aboutus">About</Link>
-          <Link to="/workouts">Workout</Link>
+          <Link to="/workouts">Workout Now</Link>
         </div>
         <div className="footer-social">
           <a href="https://www.instagram.com/sheldon.c75/" target="_blank" rel="noopener noreferrer">

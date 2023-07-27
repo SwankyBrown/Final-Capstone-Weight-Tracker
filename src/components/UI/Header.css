@@ -6,11 +6,12 @@ header {
     height: 200;
   }
   
-  .website-name {
-
-    font-size: 46px;
-    width: 20%;
-
+    .website-name {
+    position: relative;
+    font-size: 36px;
+    width: 14.5%;
+    margin-top: 23px;
+    top: -10px;
   }
   
   nav {
@@ -108,17 +109,31 @@ header {
 
 
   .dropdown-menu ul {
+    font-size: 10px;
     list-style: none;
     padding: 0;
     width: 170%; 
     display: flex;
     flex-wrap: wrap;
+    
   }
   .dropdown-menu li {
+    font-size: 3px;
     flex-basis: 34%; 
     padding: 0px; 
-    box-sizing: border-box; 
+    box-sizing: content-box;
   }
+
+  .dropdown-menu  {
+ margin-right: 10px ;
+  }
+
+  /* @media screen and (max-width: 1281px) {
+    .dropdown-menu ul {
+      font-size: 2px; 
+      height: 13px;
+    }
+  } */
 
   
   .theme-option {
@@ -137,7 +152,7 @@ header {
   /* /////////////////////// */
 
 
-/* Base styles for the dropdown */
+
 .dropdown-menu-workouts {
   position: relative;
 }
@@ -150,7 +165,7 @@ header {
   z-index: 1;
   background-color: #ffffff00;
   border-radius: 4px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0);
   padding: 10px;
   opacity: 0; 
   width: 200px;

@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 445px;
   background-color: #33333300;
   color: #fff;
   font-size: 500px;
@@ -12,15 +12,23 @@
 }
 
 
-@media screen and (max-width: 1484px) {
+@media screen and (max-width: 1481px) {
   .WeightDisplay {
     font-size: 300px; 
     height: 400px;
   }
 }
 
+@media screen and (max-width: 894px) {
+  .WeightDisplay {
+    font-size: 200px; 
+    height: 400px;
+  }
+}
+
   
   .goal-weight {
+    margin-top:-320px ;
     font-size: 50px;
     text-align: center;
   }

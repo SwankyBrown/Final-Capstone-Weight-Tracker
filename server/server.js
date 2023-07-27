@@ -43,9 +43,3 @@ sequelize.sync().then(() => {
   app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
 }).catch(error => console.log(error));
 
-// git checkout -b wip-chatgbt nutrition helper
-// git add. 
-//git commit -m "chatgbt integrated"
-//git checkout main
-// git checkout wip-chatgbt
-// git pu

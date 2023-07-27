@@ -4,6 +4,7 @@ main {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #ffffff00;
 }
 
 .business-name {
@@ -20,7 +21,7 @@ main {
   background-position: 1px; 
 }
 
-h1 {
+  h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
   position: relative;

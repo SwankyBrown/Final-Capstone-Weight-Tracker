@@ -39,7 +39,7 @@ const Home = () => {
 console.log(goalWeight);
 const poundsFromGoal = lastEntry - goalWeight  
   return (
-    <div>
+    <div className="home">
       <h1 className="cur-weight">Current Weight:</h1>
       <p className="WeightDisplay"> {lastEntry} LB</p>
       <h1 className="goal-weight">Goal: {goalWeight} LB</h1>
